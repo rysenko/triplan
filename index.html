@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Trip Planner</title>
+    <link href="main.css" rel="stylesheet">
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChxSSDIOLeGqUY_r7_BcmqwpDpWV9hQa0&sensor=true"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+    <textarea id="markers" ng-model="markersTxt"></textarea>
+    <div id="map"></div>
+</body>
+</html>
