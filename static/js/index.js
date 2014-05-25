@@ -1,8 +1,10 @@
-function MainCtrl($scope) {
+var app = angular.module('main', []);
+
+app.controller('MainCtrl', ['$scope', function ($scope) {
     $scope.$watch('markersTxt', function (markersTxt) {
         //
     });
-}
+}]);
 
 function initialize() {
     var mapOptions = {
