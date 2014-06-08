@@ -1,4 +1,16 @@
-#map {
+.container {
     width: 100%;
+}
+
+.navigation, .map {
+    float: left;
+}
+
+.map {
+    margin-left: 10px;
+    width: 900px;
+}
+
+.angular-google-map-container {
     height: 600px;
 }

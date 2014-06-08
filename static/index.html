@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html ng-app="main">
+<html>
 <head lang="en">
     <meta charset="UTF-8">
     <title>Trip Planner</title>
     <link href="css/main.css" rel="stylesheet">
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChxSSDIOLeGqUY_r7_BcmqwpDpWV9hQa0&sensor=true"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
     <script src="js/bundle.js"></script>
 </head>
-<body ng-controller="MainCtrl">
-    <textarea id="markers" ng-model="markersTxt"></textarea>
-    <div id="map"></div>
+<body data-ng-app="main" data-ng-controller="MainCtrl">
+    <div class="container">
+        <div class="navigation">
+            <button data-ng-show="sidebar" data-ng-click="sidebar = false;">&lt;&lt;</button>
+            <button data-ng-hide="sidebar" data-ng-click="sidebar = true;">&gt;&gt;</button>
+            <br>
+            <span data-ng-show="sidebar">
+                <textarea placeholder="Точки" id="markers" ng-model="markersTxt" rows="30" cols="25"></textarea>
+            </span>
+        </div>
+        <div class="map" data-google-map data-center="map.center" data-zoom="map.zoom" data-draggable="true"></div>
+    </div>
 </body>
 </html>
