@@ -14,3 +14,10 @@
 .angular-google-map-container {
     height: 600px;
 }
+
+.angular-google-maps-marker-label {
+    background: #f5f4d5;
+    border: 1px solid #74504D;
+    padding-left: 2px;
+    padding-right: 2px;
+}

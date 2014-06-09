@@ -18,7 +18,11 @@
                 <textarea placeholder="Точки" id="markers" ng-model="markersTxt" rows="30" cols="25"></textarea>
             </span>
         </div>
-        <div class="map" data-google-map data-center="map.center" data-zoom="map.zoom" data-draggable="true"></div>
+        <div class="map" data-google-map data-center="map.center" data-zoom="map.zoom" data-draggable="true">
+            <span data-ng-repeat="marker in markers" data-marker data-coords="marker.center">
+                <span data-marker-label data-content="marker.title" data-anchor="35 0"></span>
+            </span>
+        </div>
     </div>
 </body>
 </html>
