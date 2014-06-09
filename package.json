@@ -4,10 +4,6 @@
   "scripts": {
     "start": "node index.js"
   },
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-browserify": "^2.1.0"
-  },
   "dependencies": {
       "browserify": "^4.1.5",
       "express": "^4.4.1"
